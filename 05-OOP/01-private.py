@@ -11,6 +11,9 @@ class Employee:
         self.name = name
         self.__age = age # 加连个下划线属性变成私有的
 
+    def __work(self):
+        print('私有方法', self.__age)
+
 e = Employee('mar', 12)
 print(e.name)
 
@@ -22,3 +25,9 @@ print(e.name)
 '''
 print(e._Employee__age)
 print(dir(e))
+
+#私有方法调用
+e._Employee__work()
+
+print(dir(Employee))
+Employee._Employee__work(e)
