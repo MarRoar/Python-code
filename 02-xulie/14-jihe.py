@@ -13,16 +13,29 @@
 
 '''
 
-a = {11, 20, 20, 30}
-print(a)
-a.add('hell')
-print(a)
+tr1 = {
+    'name': '高小一',
+    'age': 18,
+    'salary': 30000,
+    'city': '北京'
+}
+tr2 = {
+    'name': '高小二',
+    'age': 19,
+    'salary': 20000,
+    'city': '上海'
+}
+tr3 = {
+    'name': '高小五',
+    'age': 20,
+    'salary': 10000,
+    'city': '深圳'
+}
+th = [tr1, tr2, tr3]
 
-a.remove(11)
-print(a)
-
-a.clear()
-print(a)
+for t in th:
+    if t.get('salary') > 15000:
+        print(t)
 
 
 
