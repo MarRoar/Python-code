@@ -1,5 +1,8 @@
 '''
 坦克大战
+坦克大战，
+    1、我方坦克的移动，射击
+    2、敌方坦克的移动
 '''
 import pygame, sys
 import time

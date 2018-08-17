@@ -1,5 +1,6 @@
 '''
 坦克大战
+坦克大战第一版结束
 '''
 import pygame, sys
 import time
