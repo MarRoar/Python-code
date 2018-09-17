@@ -1,13 +1,13 @@
 '''
 
 '''
-
 import timeit
 
 def t1():
     l = []
     for i in range(1000):
         l = l + [i]
+        # l += [i]
 def t2():
     l = []
     for i in range(10000):
@@ -18,7 +18,6 @@ def t3():
 
 def t4():
     l = list(range(10000))
-
 
 timer01 = timeit.Timer("t1()", "from __main__ import t1")
 print("+", timer01.timeit(number=1000), ' seconds')

@@ -1,4 +1,5 @@
 '''
+栈的操作
 Stack() 创建一个新的空栈
 push(item) 添加一个新的元素item到栈顶
 pop() 弹出栈顶元素
@@ -32,11 +33,10 @@ class Stack(object):
         '''返回栈的大小'''
         return len(self.items)
 
-
-
-s = Stack()
-s.push(1)
-print(s.is_empty())
-print(s.pop())
+if __name__ == '__main__':
+    s = Stack()
+    s.push(1)
+    print(s.is_empty())
+    print(s.pop())
 
 
