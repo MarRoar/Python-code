@@ -19,8 +19,15 @@ def select_sort(aList):
         aList[j], aList[min_index] = aList[min_index], aList[j]
 
 
-a = [10, 2, 80, 1, 99]
-select_sort(a)
-print(a)
+if __name__ == "__main__":
+    li = [9 , 16, 17, 15, 11]
+    print(li)
+    select_sort(li)
+    print(li)
+
+
+# a = [10, 2, 80, 1, 99]
+# select_sort(a)
+# print(a)
 # print(l)
 

@@ -9,12 +9,8 @@ def bubble_sort(aList):
             if aList[j] > aList[j + 1]:
                 aList[j], aList[j + 1] = aList[j + 1], aList[j]
 
-
-a = [3, 1, 9, 0,2, 4]
-
-bubble_sort(a)
-
-print(a)
-
-# 课件的方法
-print(list(range(len(a) - 1, 0, -1)))
+if __name__ == "__main__":
+    li = [54, 26, 93, 17, 77, 31, 44, 55, 20]
+    print(li)
+    bubble_sort(li)
+    print(li)

@@ -18,20 +18,30 @@
 
 '''
 
+'''
+插入排序
+'''
 def insert_sort(aList):
     '''插入排序'''
     n = len(aList)
     for i in range(n):
         j = i
-        print('j= ', j)
+        # print('j= ', j)
         while j > 0:
             if aList[j] < aList[j - 1]:
                 aList[j], aList[j - 1] = aList[j - 1], aList[j]
-            print(j)
+            # print(j)
             j -= 1
-        print(' ')
+        # print(' ')
 
-a = [1, 9, 0, 8, 8]
-# print(len(a))
-insert_sort(a)
-print(a)
+
+if __name__ == "__main__":
+    li = [54, 26, 93, 17, 77, 31, 44, 55, 20]
+    print(li)
+    insert_sort(li)
+    print(li)
+
+# a = [1, 9, 0, 8, 8]
+# # print(len(a))
+# insert_sort(a)
+# print(a)
