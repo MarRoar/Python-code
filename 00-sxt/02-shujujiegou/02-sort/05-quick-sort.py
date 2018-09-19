@@ -1,7 +1,5 @@
 '''
-
 快速排序
-
 '''
 
 def quick_sort(aList, first, last):
@@ -14,7 +12,7 @@ def quick_sort(aList, first, last):
     hight_index = last
 
     while low_index < hight_index:
-        # height 左移动
+        # hight 左移动
         while low_index < hight_index and min_val <= aList[hight_index]:
             hight_index -= 1
         aList[low_index] = aList[hight_index]
@@ -35,6 +33,7 @@ def quick_sort(aList, first, last):
 if __name__ == "__main__":
 
     li = [54, 26, 93, 17, 77, 31, 44, 55, 20]
+    # li = [26, 93, 54]
     print(li)
     quick_sort(li, 0, len(li) - 1)
     print(li)
