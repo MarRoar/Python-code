@@ -6,7 +6,6 @@ import re
 result = re.match(r"[1-9]\d?$|0|100", '0')
 print(result)
 
-
 result = re.match(r"[1-9]?\d?$|100", '0')
 print(result)
 
@@ -21,7 +20,7 @@ print(result.groups())
 # \1 \2 提取的位置
 result = re.match(r"<(.+)><(.+)>.+</\2></\1>", '<html><h1>helo world</h1></html>')
 print(result)
-result = re.match(r"<(.+)><(.+)>.+</\2></\1>", '<html><h1>helo world</h1></h1>')
+result = re.match(r"<(.+)><(.+)>.+</\2></\1>", '<html><h1>helo world</h1></h1>')# 匹配不成功
 print(result)
 
 
