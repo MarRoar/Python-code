@@ -18,10 +18,19 @@ print(result.group(1))
 print(result.groups())
 
 #<html><h1>helo world</h1></html>
+# \1 \2 提取的位置
 result = re.match(r"<(.+)><(.+)>.+</\2></\1>", '<html><h1>helo world</h1></html>')
 print(result)
 result = re.match(r"<(.+)><(.+)>.+</\2></\1>", '<html><h1>helo world</h1></h1>')
 print(result)
+
+
+# 可以给 分组起名字 
+result = re.match(r"<(?P<Key1>.+)><(?P<Key2>.+)>.+</(?P=Key2)></(?P=Key1)>", '<html><h1>helo world</h1></html>')
+print(result)
+
+# ret = re.match(r"<(?P<name1>\w*)><(?P<name2>\w*)>.*</(?P=name2)></(?P=name1)>", "<html><h1>www.itcast.cn</h1></html>")
+# ret.group()
 
 
 
