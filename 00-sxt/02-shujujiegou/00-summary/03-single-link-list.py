@@ -1,7 +1,6 @@
 '''
 单向链表
 
-
 单链表的操作
 is_empty() 链表是否为空
 length() 链表长度
@@ -11,7 +10,6 @@ append(item) 链表尾部添加元素
 insert(pos, item) 指定位置添加元素
 remove(item) 删除节点
 search(item) 查找节点是否存在
-
 
 '''
 

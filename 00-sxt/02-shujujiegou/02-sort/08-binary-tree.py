@@ -19,7 +19,6 @@ class Tree(object):
         '''
             思路
             1、先找到要添加元素的节点
-            2、
         '''
         node = Node(item)
 
