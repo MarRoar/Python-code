@@ -1,6 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
+# admin admin123456
 
 from django.contrib import admin
 from .models import Post, Category, Tag
