@@ -25,6 +25,9 @@ class Tag(models.Model):
 class Post(models.Model):
     '''文章'''
 
+    # 浏览数
+    views = models.PositiveIntegerField(default=0)
+
     # 文章标题
     title = models.CharField(max_length=70)
 
@@ -51,3 +54,12 @@ class Post(models.Model):
 
     def get_absolute_url(self):
         return reverse('blog:detail', kwargs={'pk': self.pk})
+
+    # 排序
+    class Meta:
+        ordering = ['-created_time']
+
+    # 有浏览的时候 views + 1
+    def increase_views(self):
+        self.views += 1
+        self.save(update_fields=['views'])
