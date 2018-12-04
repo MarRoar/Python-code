@@ -1,0 +1,2 @@
+2018-11-30 09:22:10 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: dongguanSpider)
+2018-11-30 09:22:10 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.19.0, Twisted 18.9.0, Python 2.7.12 (default, Nov 12 2018, 14:36:49) - [GCC 5.4.0 20160609], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.4.1, Platform Linux-4.10.0-28-generic-x86_64-with-Ubuntu-16.04-xenial
